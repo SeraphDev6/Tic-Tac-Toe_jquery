@@ -1,0 +1,34 @@
+*{
+    margin: 1vh;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right,red, blue);
+    transition: all 1s ease-out;
+}
+#grid-div{
+    display: grid;
+    grid-template-columns: repeat(3,10vh);
+    grid-template-rows: repeat(3,10vh);
+    grid-row-gap: 1vh;
+    grid-column-gap: 1vh;
+}
+.square-div{
+    height: 10vh;
+    width: 10vh;
+}
+.blank{
+    background-color: black;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+span{
+    margin: 0;
+}
