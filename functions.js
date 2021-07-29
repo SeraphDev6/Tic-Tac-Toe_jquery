@@ -36,7 +36,7 @@ function checkWin(){
         $("body").css("background","#800")
         $("#reset-button").slideDown("slow");
     }
-    if($("#1.blue, #2.blue, #3.blue").length==3||
+    else if($("#1.blue, #2.blue, #3.blue").length==3||
     $("#4.blue, #5.blue, #6.blue").length==3||
     $("#7.blue, #8.blue, #9.blue").length==3||
     $("#1.blue, #4.blue, #7.blue").length==3||
@@ -48,6 +48,10 @@ function checkWin(){
         $("#message").text("Blue Wins!!!");
         $("#message").addClass("blue");
         $("body").css("background","#008")
+        $("#reset-button").slideDown("slow");
+    }
+    else if($(".blank").length==0){
+        $("#message").text("It's a Tie :/");
         $("#reset-button").slideDown("slow");
     }
 }
